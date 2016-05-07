@@ -8,7 +8,7 @@
   
   <!-- debug or release -->
   <Choose>
-    <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('%(Configuration)', '(?i)(REL)'))">
+    <When Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(Configuration)', '(?i)(REL)'))">
       <PropertyGroup Label="UserMacros">
         <DebugSuffix></DebugSuffix>
       </PropertyGroup>
